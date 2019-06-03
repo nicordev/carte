@@ -1,0 +1,359 @@
+
+/*
+	Balises
+	-------
+*/
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	/*background-color: rgb(247, 242, 192);*/
+	background-color: rgb(186, 219, 244);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+a {
+	color: rgb(75, 114, 165);
+	text-decoration: none;
+}
+
+th {
+	color: rgb(75, 114, 165);
+}
+
+td {
+	padding: 0.2em;
+}
+
+
+/*
+	Identifiants
+	------------
+*/
+
+#map {
+	width: 100%;
+	height: 100%;
+}
+
+#where_am_i_link {
+	border-radius: 5em;
+	border: 0.2em rgb(75, 114, 165) solid;
+	box-shadow: 0px 3px 6px grey;
+	padding: 1em;
+	color: rgb(75, 114, 165);
+	background-color: rgb(186, 219, 244);
+	font-size: 2em;
+}
+
+#history_link {
+	border-radius: 5em;
+	border: 0.2em rgb(75, 114, 165) solid;
+	box-shadow: 0px 3px 6px grey;
+	padding: 1em;
+	color: rgb(75, 114, 165);
+	background-color: rgb(186, 219, 244);
+	font-size: 1em;
+}
+
+#user_info_window {
+	position: fixed;
+	right: 20px;
+	top: 160px;
+}
+
+#waypoint_info_window {
+	display: none;
+	position: fixed;
+	left: 20px;
+	top: 160px;
+}
+
+#infos {
+	color: grey;
+}
+
+#hikeName {
+	margin: 1em;
+	/*background-color: rgb(186, 219, 244);*/
+	border-radius: 20px;
+	border: 0.2em rgb(75, 114, 165) solid;
+	box-shadow: 0px 3px 6px grey;
+	font-size: 0.75em;
+	padding: 0.5em;
+}
+
+#center_btn {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+}
+
+#user_info_btn {
+	display: block;
+	position: fixed;
+	right: 20px;
+	top: 20px;
+}
+
+#waypoint_info_btn {
+	position: fixed;
+	left: 20px;
+	top: 20px;
+}
+
+#hike_info {
+	color: rgb(75, 114, 165);
+}
+
+#mapMenu {
+	position: fixed;
+	left: 20px;
+	bottom: 85px;
+	display: none;
+}
+
+#mapMenuBtn {
+	position: fixed;
+	left: 20px;
+	bottom: 20px;
+}
+
+#add_note_window {
+	display: none;
+	position: fixed;
+	left: 20px;
+	bottom: 20px;
+	width: 90%;
+	height: 80%;
+	max-height: 500px;
+	max-width: 700px;
+}
+
+#add_note_close_btn {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+#add_note_ok_btn {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+#add_note_form {
+	width: 80%;
+	height: 80%;
+}
+
+#add_note_text {
+	width: 100%;
+	height: 80%;
+}
+
+#continue_hike {
+	display: none;
+	position: fixed;
+	text-align: center;
+}
+
+#help_window {
+	display: none;
+	position: fixed;
+	text-align: center;
+}
+
+#mapMenuWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+/*
+	Classes
+	-------
+*/
+
+.justify {
+	text-align: justify;
+}
+
+.window_btns_wrapper {
+	display: flex;
+	justify-content: space-around;
+}
+
+.pageTitle {
+	color: rgb(75, 114, 165);
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.info_window {
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	padding: 1em;
+	border-radius: 20px;
+}
+
+.menuButton {
+	border-radius: 20px;
+	border: 0.2em rgb(75, 114, 165) solid;
+	box-shadow: 0px 3px 6px grey;
+	padding: 0.5em;
+	margin: 0.75em;
+	color: rgb(75, 114, 165);
+	background-color: rgb(186, 219, 244);
+	font-weight: bold;
+	font-size: 0.75em;
+}
+
+.menuButton:hover {
+	cursor: pointer;
+}
+
+.niceButton {
+	border-radius: 20px;
+	border: 0.2em rgb(75, 114, 165) solid;
+	box-shadow: 0px 3px 6px grey;
+	padding: 1em;
+	color: rgb(75, 114, 165);
+	background-color: rgb(186, 219, 244);
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.niceButton:hover {
+	cursor: pointer;
+}
+
+.smallButton {
+	border-radius: 20px;
+	border: 0.2em rgb(75, 114, 165) solid;
+	box-shadow: 0px 3px 6px grey;
+	padding: 0.5em;
+	color: rgb(75, 114, 165);
+	background-color: rgb(186, 219, 244);
+	font-weight: bold;
+	font-size: 0.75em;
+}
+
+.smallButton:hover {
+	cursor: pointer;
+}
+
+.windowButton {
+	border-radius: 20px;
+	border: 0.2em rgb(75, 114, 165) solid;
+	box-shadow: 0px 3px 6px grey;
+	padding: 0.5em;
+	color: rgb(75, 114, 165);
+	background-color: rgb(186, 219, 244);
+	font-weight: bold;
+	font-size: 0.75em;
+}
+
+.windowButton:hover {
+	cursor: pointer;
+}
+
+.imageBtn {
+	border: 0.2em rgb(75, 114, 165) solid;
+	background-color: rgb(186, 219, 244);
+	box-shadow: 0px 3px 6px grey;
+	border-radius: 50px;
+	padding: 0.20em;
+}
+
+.imageBtn:hover {
+	cursor: pointer;
+}
+
+.center {
+	width: 100%;
+	text-align: center;
+}
+
+.msg_box {
+	color: rgb(26, 87, 162);
+	font-weight: bold;
+	font-size: 1.5em;
+	position: absolute;
+	background-color: rgba(186, 219, 244, 0.8);
+	width: 100%;
+	padding: 1em;
+	text-align: center;
+	display: none;
+}
+
+
+/*
+	Media queries
+	-------------
+*/
+
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+
+	textarea {
+		font-size: 2em;
+	}
+
+	p {
+		font-size: 1em;
+	}
+
+	#center_btn img {
+		width: 200px;
+		height: 176px;
+	}
+
+	#position {
+		font-size: 2em;
+	}
+
+	#mapMenu {
+		bottom: 160px;
+	}
+
+	#user_info_window {
+		font-size: 2em;
+	}
+
+	#waypoint_info_window {
+		font-size: 2em;
+	}
+
+	#hikeName {
+		font-size: 2em;
+	}
+
+	.smallButton {
+		font-size: 2em;
+	}
+
+	.niceButton {
+		font-size: 2em;
+	}
+
+	.windowButton {
+		font-size: 1em;
+	}
+
+	.imageBtn {
+		padding: 1em;
+	}
+
+	.menuButton {
+		font-size: 1.5em;
+	}
+}

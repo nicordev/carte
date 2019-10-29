@@ -777,7 +777,13 @@
 
 	// Centrage sur la position de l'utilisateur
 	var locatingId; // id pour stopper la géolocalisation
-	locateUser();
+
+	if (waypoints.length > 0) {
+		let position = waypoints[0].position;
+		currentMap.panTo(position);
+	} else {
+		locateUser();
+	}
 
 	// Bouton de centrage de la carte
 	var centerBtnElt = document.getElementById("center_btn");

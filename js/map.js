@@ -479,7 +479,7 @@
 	 	var textNodeLink = document.createTextNode("cliquer ici");
 	 	var textNodeEnd = document.createTextNode(" pour relancer la page.");
 
-	 	linkElt.href = "https://carte.ovh?page=recording";
+	 	linkElt.href = "https://carte.nicordev.com?page=recording";
 
 	 	titleElt.appendChild(textNodeBegin);
 	 	linkElt.appendChild(textNodeLink);
